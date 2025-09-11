@@ -1,0 +1,16 @@
+const express = require('express');
+const { registerUser, loginUser } = require('../controllers/userController');
+const { protect } = require('../middleware/authMiddleware');
+const router = express.Router();
+
+// @desc Register a new user
+// @route POST /api/auth/register
+// @access Public
+router.post('/register', registerUser);
+
+// @desc Login a user
+// @route POST /api/auth/login
+// @access Public
+router.post('/login', loginUser);
+
+module.exports = router;

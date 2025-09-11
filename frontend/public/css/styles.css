@@ -1,0 +1,183 @@
+/* Modern, interactive style for SavvyChef with color and visual enhancements */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #e3ffe8 0%, #f7e8ff 100%);
+}
+header, footer {
+    background: linear-gradient(90deg, #355c7d 0%, #6c5b7b 100%);
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+nav ul li a, #logoutBtn {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s, background 0.2s;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+nav ul li a:hover, #logoutBtn:hover {
+    color: #fff;
+    background: #f67280;
+}
+main {
+    max-width: 650px;
+    margin: 2rem auto;
+    background: rgba(255,255,255,0.95);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(44,62,80,0.12);
+    padding: 2.5rem 2rem;
+}
+h1, h2 {
+    margin-top: 0;
+    color: #355c7d;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+input, textarea, button {
+    padding: 0.8em;
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    font-size: 1em;
+}
+input:focus, textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+button {
+    background: linear-gradient(90deg, #4caf50 60%, #1976d2 100%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(246,114,128,0.08);
+}
+button:hover {
+    background: linear-gradient(90deg, #388e3c 60%, #1565c0 100%);
+    color: #fff;
+}
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 2em;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px #0002;
+}
+.link {
+    color: #1976d2;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1em;
+}
+.tabBtn {
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    border: none;
+    background: #f7e8ff;
+    color: #1976d2;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tabBtn.active, .tabBtn:hover {
+    background: #1976d2;
+    color: #fff;
+}
+.tabContent {
+    margin-top: 2em;
+}
+.msg {
+    min-height: 1.5em;
+    text-align: center;
+}
+.mealplan-dashboard {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+#calendarView {
+  min-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #fafafa;
+}
+.meal-slots {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.meal-slot {
+  background: #f5f5f5;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.selectRecipeBtn {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+}
+.nutrient-bar {
+  margin: 0.5rem 0;
+}
+.progress {
+  background: #eee;
+  border-radius: 4px;
+  width: 200px;
+  height: 12px;
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+.bar {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #4caf50, #ff9800);
+  width: 0;
+  transition: width 0.4s;
+}
+.nutrient-bar[data-nutrient="calories"] .bar { background: #ff9800; }
+.nutrient-bar[data-nutrient="protein"] .bar { background: #4caf50; }
+.nutrient-bar[data-nutrient="carbs"] .bar { background: #2196f3; }
+.nutrient-bar[data-nutrient="fat"] .bar { background: #f44336; }
+.modal { /* Simple modal styling */ position: fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.3); display:flex; align-items:center; justify-content:center; }
+.modal-content { background:#fff; padding:2rem; border-radius:8px; min-width:300px; max-width:90vw; }
+.close { float:right; cursor:pointer; font-size:1.5rem; }
+@media (max-width: 700px) {
+    main, #authForms {
+        padding: 1rem;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 1em;
+        border-radius: 0;
+    }
+}
