@@ -19,10 +19,8 @@ RecipeApp is a full-stack web application designed to help users manage their pe
   - cors for cross-origin requests
   - express-async-handler for error handling
 
-- **Frontend**:
-  - Vanilla JavaScript
-  - HTML5
-  - CSS3
+
+  **Frontend:** React.js (Components, Hooks, React 
 
 ## Project Structure
 ```

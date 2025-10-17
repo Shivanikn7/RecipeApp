@@ -51,7 +51,6 @@ body {
   border-radius: 18px;
   box-shadow: 0 6px 32px rgba(44,62,80,0.13);
   padding: 2.5rem 3.5rem 2.5rem 3.5rem;
-}
 
 .colorful-auth {
   background: linear-gradient(135deg, #e3f2fd 0%, #fce4ec 100%);
