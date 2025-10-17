@@ -37,11 +37,7 @@ RecipeApp
 │   ├── package-lock.json
 │   └── server.js
 └── frontend
-    ├── public
-    ├── css
-    ├── js
-    └── README.md
-```
+    ├──React.js
 
 ## Getting Started
 
